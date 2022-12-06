@@ -1,0 +1,16 @@
+{
+  "name": "GlassSidebar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss -i ./styles/index.css -o ./public/final.css --watch",
+		"minify": "tailwindcss -i ./styles/index.css -o ./public/final.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

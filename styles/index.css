@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   body {
+      font-family: 'Poppins', sans-serif;
+   }
+}
+
+@layer components {
+   .nav-item {
+      @apply px-4 py-2 flex items-center gap-3 text-white cursor-pointer rounded duration-300;
+   }
+   .nav-icon {
+      @apply text-[28px];
+   }
+   .nav-title {
+      @apply text-lg duration-100;
+   }
+}
+
+.sidebar-expand {
+   @apply w-96;
+}
+
+.logo-expand {
+   @apply w-32
+}
+
+.nav-item:hover {
+   @apply bg-white/20;
+}
+
+.nav-item.active:hover {
+   @apply bg-[#c843fdfd];
+}
+
+.active {
+   @apply bg-[#c843fdde];
+}

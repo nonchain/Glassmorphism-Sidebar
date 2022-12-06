@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Glass Sidebar</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+   <link href="./public/final.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-slate-100">
+   <!--=============== BACKGROUND ====================-->
+   <img src="./public/assets/images/bg_12.jpg" alt=""
+      class="w-full h-screen object-cover bg-no-repeat absolute inset-0 z-10">
+
+   <div class="absolute z-20">
+      <!--=============== SIDEBAR ====================-->
+      <div class="pt-14 w-32 h-screen bg-gray-900/20 backdrop-blur-[6px] border-r-2 border-white/10 shadow-sidebar relative duration-500" id="sidebar">
+         <!-- TOGGLE -->
+         <div class="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center absolute right-0 top-1/4 translate-x-1/2 text-xl duration-200 hover:bg-gray-500 cursor-pointer" id="toggle">
+            <i class="ri-arrow-left-s-line rotate-180 duration-200 text-white"></i>
+         </div>
+         <!-- LOGO -->
+         <div class="w-full flex flex-col items-center gap-4">
+            <img class="w-20 rounded-full" src="./public/assets/images/blockchain.png" alt="" id="logo-img">
+            <h3 class="text-white font-semibold duration-100 scale-0" id="title">Non Chain</h3>
+         </div>
+
+         <nav class="mt-16 px-8 flex flex-col gap-10">
+            <div>
+               <h2 class="text-lg text-white font-semibold hidden">Management</h2>
+
+               <ul class="mt-5 flex flex-col gap-3">
+                  <li class="nav-item justify-center active">
+                     <i class="ri-dashboard-fill nav-icon "></i>
+                     <span class="nav-title hidden">Dashboard</span>
+                  </li>
+                  <li class="nav-item justify-center">
+                     <i class="ri-bar-chart-2-fill nav-icon"></i>
+                     <span class="nav-title hidden">Analytics</span>
+                  </li>
+                  <li class="nav-item justify-center">
+                     <i class="ri-wallet-fill nav-icon"></i>
+                     <span class="nav-title hidden">Wallet</span>
+                  </li>
+                  <li class="nav-item justify-center">
+                     <i class="ri-notification-2-fill nav-icon"></i>
+                     <span class="nav-title hidden">Notification</span>
+                  </li>
+                  <li class="nav-item justify-center">
+                     <i class="ri-settings-fill nav-icon"></i>
+                     <span class="nav-title hidden">Setting</span>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="w-full bg-white/20 h-[2px]"></div>
+
+            <div>
+               <h2 class="text-lg text-white font-semibold hidden">Support</h2>
+
+               <ul class="mt-5 flex flex-col gap-3">
+                  <li class="nav-item justify-center">
+                     <i class="ri-question-fill nav-icon"></i>
+                     <span class="nav-title hidden">Get Help</span>
+                  </li>
+                  <li class="nav-item justify-center">
+                     <i class="ri-message-2-fill nav-icon"></i>
+                     <span class="nav-title hidden">Send Feedback</span>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+   </div>
+
+   <script src="./main.js"></script>
+</body>
+
+</html>
